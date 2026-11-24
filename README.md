@@ -1,8 +1,8 @@
 # Lower Wacker
 
-An 8-bit sliding-block traffic puzzle built for an iPad mounted on the back of a rideshare headrest in Chicago. Slide the other cars and trucks out of the way and drive the red car out the exit. Every puzzle has a **par** (the fewest possible moves), and each difficulty keeps its own top-10 board.
+An 8-bit sliding-block traffic puzzle. Slide the other cars and trucks out of the way and drive the red car out the exit. Every puzzle has a **par** (the fewest possible moves), and each difficulty keeps its own top-10 board.
 
-It's a single self-contained HTML file plus a tiny service worker, so it runs fully offline once it's on the home screen.
+It's a single self-contained HTML file plus a tiny service worker, so it runs fully offline.
 
 Play it: <https://elinzer.github.io/gridlock-game/>
 
