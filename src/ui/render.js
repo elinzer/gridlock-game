@@ -9,13 +9,14 @@ import { QR } from '../generated/qr.js';
 import { PALETTE, VEHICLE_COLORS } from './palette.js';
 import { drawText, drawTextCentered, textWidth } from './font.js';
 import { drawVehicle } from './sprites.js';
+import { ATTRACT } from './attract.js';
 import {
   W, H, BOARD, SIDEBAR, QR_CARD, CREDIT_LINES, MAIN, MAIN_CX, INITIAL_COLUMNS, INITIAL_ROWS, buttonsFor,
 } from './layout.js';
 
 export const SOLVE_ANIM_MS = 400;
-const TITLE_BOARD = parseBoard('BBC.DD' + '..C..E' + 'AAC..E' + 'F.GG.E' + 'F..H..' + 'II.H..');
-const TITLE_GEO = { x: MAIN_CX - 36, y: 44, cell: 12 };
+export const TITLE_BOARD = parseBoard('BBC.DD' + '..C..E' + 'AAC..E' + 'F.GG.E' + 'F..H..' + 'II.H..');
+const TITLE_GEO = { x: MAIN_CX - 36, y: 44, cell: ATTRACT.cell };
 const SIDEBAR_CX = SIDEBAR.x + SIDEBAR.w / 2;
 
 function rect(ctx, x, y, w, h, color) {

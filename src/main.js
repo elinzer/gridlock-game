@@ -5,7 +5,8 @@ import { createPicker } from './game/picker.js';
 import { initialState, reduce, warningVisible } from './game/app.js';
 import { W, H, hitTest, toInternal } from './ui/layout.js';
 import { beginDrag, dragOffsetPx, endDrag, cancelDrag } from './ui/drag.js';
-import { render, isAnimating, SOLVE_ANIM_MS } from './ui/render.js';
+import { render, isAnimating, SOLVE_ANIM_MS, TITLE_BOARD } from './ui/render.js';
+import { createAttract, stepAttract, attractView } from './ui/attract.js';
 
 const TICK_MS = 250;
 const SOLVED_TAP_GUARD_MS = SOLVE_ANIM_MS + 400;
@@ -25,6 +26,7 @@ const ctx = buffer.getContext('2d');
 
 let state = initialState(performance.now());
 const view = { drag: null, dragOffset: 0, solveAnim: null, entries: [] };
+let attract = createAttract(TITLE_BOARD, performance.now());
 let gesture = null;
 let dirty = true;
 
@@ -64,7 +66,13 @@ function draw(now) {
 
 function frame() {
   const now = performance.now();
-  if (dirty || view.drag || isAnimating(view, now)) {
+  let attractMoving = false;
+  if (state.screen === 'title') {
+    attract = stepAttract(attract, now, Math.random);
+    view.attract = attractView(attract, now);
+    attractMoving = !!attract.move;
+  }
+  if (dirty || attractMoving || view.drag || isAnimating(view, now)) {
     dirty = isAnimating(view, now);
     draw(now);
   }
