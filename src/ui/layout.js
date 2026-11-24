@@ -56,7 +56,7 @@ export function buttonsFor(screen, state) {
         centered('diff:back', 158, 64, 24, 'BACK'),
       ];
     case 'play':
-      return [button('play:quit', SIDEBAR.x, 50, SIDEBAR.w, 20, 'QUIT')];
+      return [button('play:quit', SIDEBAR.x, 52, SIDEBAR.w, 20, 'QUIT')];
     case 'solved':
       return [button('solved:continue', MAIN.x, MAIN.y, MAIN.w, MAIN.h, '')];
     case 'timesup':

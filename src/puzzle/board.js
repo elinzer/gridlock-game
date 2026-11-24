@@ -115,8 +115,8 @@ export function isSolved(board) {
 export function legalMoves(board) {
   const moves = [];
   board.vehicles.forEach((v, i) => {
-    const { min, max } = slideRange(board, i);
-    for (let d = min; d <= max; d++) if (d !== 0) moves.push({ i, delta: d });
+    const range = slideRange(board, i);
+    for (let d = range.min; d <= range.max; d++) if (d !== 0) moves.push({ i, delta: d });
   });
   return moves;
 }

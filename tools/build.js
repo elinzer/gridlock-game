@@ -31,6 +31,8 @@ async function bundle() {
     bundle: true,
     format: 'iife',
     target: 'safari12',
+    // Safari 12 runs `catch {}`, but it's ES2019 and the shipped code is held to ES2018.
+    supported: { 'optional-catch-binding': false },
     minify: true,
     write: false,
     logLevel: 'silent',
