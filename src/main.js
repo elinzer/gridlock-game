@@ -2,13 +2,14 @@ import puzzles from './puzzle/puzzles.json';
 import { createStorage } from './game/storage.js';
 import { createLeaderboard } from './game/leaderboard.js';
 import { createPicker } from './game/picker.js';
-import { initialState, reduce, warningVisible } from './game/app.js';
+import { initialState, reduce, warningVisible, canReloadForUpdate } from './game/app.js';
 import { W, H, hitTest, toInternal } from './ui/layout.js';
 import { beginDrag, dragOffsetPx, endDrag, cancelDrag } from './ui/drag.js';
 import { render, isAnimating, SOLVE_ANIM_MS, TITLE_BOARD } from './ui/render.js';
 import { createAttract, stepAttract, attractView } from './ui/attract.js';
 
 const TICK_MS = 250;
+const UPDATE_CHECK_MS = 10 * 60 * 1000;
 const SOLVED_TAP_GUARD_MS = SOLVE_ANIM_MS + 400;
 
 const storage = createStorage(() => window.localStorage);
@@ -29,6 +30,7 @@ const view = { drag: null, dragOffset: 0, solveAnim: null, entries: [] };
 let attract = createAttract(TITLE_BOARD, performance.now());
 let gesture = null;
 let dirty = true;
+let updateReady = false;
 
 function dispatch(event) {
   const before = state;
@@ -196,12 +198,21 @@ window.addEventListener('resize', resize);
 window.addEventListener('orientationchange', resize);
 
 setInterval(() => {
-  dispatch({ type: 'tick', now: performance.now() });
+  const now = performance.now();
+  dispatch({ type: 'tick', now });
   if (state.screen !== 'title') dirty = true;
+  if (updateReady && !gesture && canReloadForUpdate(state, now)) window.location.reload();
 }, TICK_MS);
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').catch(() => {});
+  let hadController = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (hadController) updateReady = true;
+    hadController = true;
+  });
+  navigator.serviceWorker.register('sw.js').then((reg) => {
+    setInterval(() => { reg.update().catch(() => {}); }, UPDATE_CHECK_MS);
+  }).catch(() => {});
 }
 
 resize();

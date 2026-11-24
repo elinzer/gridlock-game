@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { idleStatus } from '../src/game/idle.js';
-import { initialState, reduce, warningVisible } from '../src/game/app.js';
+import { initialState, reduce, warningVisible, canReloadForUpdate } from '../src/game/app.js';
 import { createStorage } from '../src/game/storage.js';
 import { createLeaderboard } from '../src/game/leaderboard.js';
 
@@ -212,4 +212,13 @@ test('the title screen never warns or resets', () => {
   const s = initialState(0);
   assert.equal(warningVisible(s, 600000), false);
   assert.deepEqual(reduce(s, { type: 'tick', now: 600000 }, deps), s);
+});
+
+test('updates only reload on an untouched title screen', () => {
+  const { deps } = setup();
+  const title = initialState(0);
+  assert.equal(canReloadForUpdate(title, 4999), false);
+  assert.equal(canReloadForUpdate(title, 5000), true);
+  const menu = reduce(title, tap('title:play', 0), deps);
+  assert.equal(canReloadForUpdate(menu, 999999), false);
 });

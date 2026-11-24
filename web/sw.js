@@ -4,7 +4,14 @@ var PRECACHE = ['./', './index.html', './apple-touch-icon.png'];
 self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE)
-      .then(function (cache) { return cache.addAll(PRECACHE); })
+      .then(function (cache) {
+        return Promise.all(PRECACHE.map(function (url) {
+          return fresh(url).then(function (res) {
+            if (!res.ok) throw new Error('precache failed: ' + url);
+            return cache.put(url, res);
+          });
+        }));
+      })
       .then(function () { return self.skipWaiting(); })
   );
 });
@@ -21,10 +28,25 @@ self.addEventListener('activate', function (event) {
   );
 });
 
-function networkWithTimeout(request, ms) {
+function fresh(url) {
+  return fetch(url, { cache: 'no-store', credentials: 'same-origin' });
+}
+
+// The network fetch keeps going after the timeout, so a slow connection still
+// refreshes the saved copy for the next launch.
+function navigate(url, ms) {
+  var network = fresh(url).then(function (res) {
+    if (res && res.ok) {
+      var copy = res.clone();
+      return caches.open(CACHE)
+        .then(function (cache) { return cache.put('./index.html', copy); })
+        .then(function () { return res; });
+    }
+    return res;
+  });
   return new Promise(function (resolve, reject) {
     var timer = setTimeout(function () { reject(new Error('timeout')); }, ms);
-    fetch(request).then(function (res) { clearTimeout(timer); resolve(res); },
+    network.then(function (res) { clearTimeout(timer); resolve(res); },
       function (err) { clearTimeout(timer); reject(err); });
   });
 }
@@ -34,14 +56,7 @@ self.addEventListener('fetch', function (event) {
   if (req.method !== 'GET') return;
   if (req.mode === 'navigate') {
     event.respondWith(
-      networkWithTimeout(req, 3000)
-        .then(function (res) {
-          if (res && res.ok) {
-            var copy = res.clone();
-            caches.open(CACHE).then(function (cache) { cache.put('./index.html', copy); });
-          }
-          return res;
-        })
+      navigate(req.url, 3000)
         .catch(function () {
           return caches.match('./index.html').then(function (hit) {
             return hit || caches.match('./');

@@ -24,6 +24,12 @@ export function warningVisible(state, now) {
   return state.screen !== 'title' && idleStatus(state.lastTouchAt, now).status === 'warning';
 }
 
+export const RELOAD_QUIET_MS = 5000;
+
+export function canReloadForUpdate(state, now) {
+  return state.screen === 'title' && now - state.lastTouchAt >= RELOAD_QUIET_MS;
+}
+
 const set = (state, changes) => Object.assign({}, state, changes);
 
 function goTitle(state) {
