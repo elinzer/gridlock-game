@@ -9,3 +9,6 @@ export const DIFFICULTIES = {
 export const DIFFICULTY_ORDER = ['easy', 'medium', 'hard'];
 export const POOL_SIZE = 120;
 export const GEN_SEED = 20261123;
+
+export const LEADERBOARD_SIZE = 10;
+export const RECENT_SIZE = 10;
