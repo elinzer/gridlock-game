@@ -12,3 +12,5 @@ export const GEN_SEED = 20261123;
 
 export const LEADERBOARD_SIZE = 10;
 export const RECENT_SIZE = 10;
+
+export const IDLE = { warnMs: 60000, graceMs: 10000 };
