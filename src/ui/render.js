@@ -8,6 +8,7 @@ import { LETTERS } from '../game/initials.js';
 import { QR } from '../generated/qr.js';
 import { PALETTE, VEHICLE_COLORS } from './palette.js';
 import { drawText, drawTextCentered, textWidth } from './font.js';
+import { drawVehicle } from './sprites.js';
 import {
   W, H, BOARD, SIDEBAR, QR_CARD, CREDIT_LINES, MAIN, MAIN_CX, INITIAL_COLUMNS, INITIAL_ROWS, buttonsFor,
 } from './layout.js';
@@ -33,17 +34,6 @@ export function vehicleColor(i) {
   return i === 0 ? PALETTE.red : VEHICLE_COLORS[(i - 1) % VEHICLE_COLORS.length];
 }
 
-function drawVehicleBlock(ctx, v, x, y, cell, color) {
-  const inset = Math.max(1, Math.round(cell / 12));
-  const w = (v.horiz ? v.len * cell : cell) - inset * 2;
-  const h = (v.horiz ? cell : v.len * cell) - inset * 2;
-  const px = x + inset;
-  const py = y + inset;
-  rect(ctx, px, py, w, h, PALETTE.ink);
-  rect(ctx, px + 1, py + 1, w - 2, h - 2, color);
-  rect(ctx, px + 1, py + 1, w - 2, 1, PALETTE.text);
-}
-
 // geo = { x, y, cell }; opts = { dragIndex, dragOffset, exitOffset }
 export function drawBoard(ctx, board, geo, opts) {
   const o = opts || {};
@@ -59,10 +49,14 @@ export function drawBoard(ctx, board, geo, opts) {
       rect(ctx, geo.x + m * geo.cell + Math.floor(geo.cell / 2), geo.y + n * geo.cell, 1, 1, PALETTE.roadLine);
     }
   }
+  // The exit is an underground portal: a dark tunnel mouth cut through the
+  // frame with a concrete lip above it, and green arrows pointing out.
   const exitY = geo.y + EXIT_ROW * geo.cell;
-  rect(ctx, geo.x + size, exitY, f, geo.cell, PALETTE.ink);
+  const lip = Math.max(1, Math.round(f / 2));
+  rect(ctx, geo.x + size, exitY - lip, f + lip, geo.cell + lip * 2, PALETTE.dim);
+  rect(ctx, geo.x + size, exitY, f + lip, geo.cell, PALETTE.ink);
   for (let n = 0; n < 2; n++) {
-    const ax = geo.x + size + f + 2 + n * 3;
+    const ax = geo.x + size + f + lip + 2 + n * 3;
     const ay = exitY + Math.floor(geo.cell / 2);
     rect(ctx, ax, ay - 2, 1, 5, PALETTE.exit);
     rect(ctx, ax + 1, ay - 1, 1, 3, PALETTE.exit);
@@ -72,7 +66,7 @@ export function drawBoard(ctx, board, geo, opts) {
   ctx.save();
   ctx.beginPath();
   ctx.rect(geo.x, geo.y, size, size);
-  ctx.rect(geo.x + size, exitY, f, geo.cell);
+  ctx.rect(geo.x + size, exitY, f + lip, geo.cell);
   ctx.clip();
   board.vehicles.forEach((v, i) => {
     let x = geo.x + v.col * geo.cell;
@@ -81,7 +75,7 @@ export function drawBoard(ctx, board, geo, opts) {
       if (v.horiz) x += o.dragOffset; else y += o.dragOffset;
     }
     if (i === 0 && o.exitOffset) x += o.exitOffset;
-    drawVehicleBlock(ctx, v, Math.round(x), Math.round(y), geo.cell, vehicleColor(i));
+    drawVehicle(ctx, v, Math.round(x), Math.round(y), geo.cell, vehicleColor(i));
   });
   ctx.restore();
 }
