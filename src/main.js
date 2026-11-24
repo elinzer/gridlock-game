@@ -57,11 +57,28 @@ function resize() {
   dirty = true;
 }
 
+// A fixed CRT-style overlay: one dark device-pixel row in every four. It is
+// identical every frame, so nothing flickers or rolls.
+function makeScanlines() {
+  const tile = document.createElement('canvas');
+  tile.width = 1;
+  tile.height = 4;
+  const t = tile.getContext('2d');
+  t.fillStyle = 'rgba(0,0,0,0.15)';
+  t.fillRect(0, 3, 1, 1);
+  return screenCtx.createPattern(tile, 'repeat');
+}
+const scanlines = makeScanlines();
+
 function draw(now) {
   render(ctx, state, view, now);
   screenCtx.imageSmoothingEnabled = false;
   screenCtx.webkitImageSmoothingEnabled = false;
   screenCtx.drawImage(buffer, 0, 0, W, H, 0, 0, screen.width, screen.height);
+  if (scanlines) {
+    screenCtx.fillStyle = scanlines;
+    screenCtx.fillRect(0, 0, screen.width, screen.height);
+  }
 }
 
 function frame() {
