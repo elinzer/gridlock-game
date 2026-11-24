@@ -1,0 +1,1448 @@
+{
+  "easy": [
+    {
+      "board": ".BB.CCDDD.E.FAA.E.FGG.HHIIJJKLMMNNKL",
+      "par": 4
+    },
+    {
+      "board": "..BBCCD.EFFGD.EAAGHHEIIIJKK.LLJMMNN.",
+      "par": 4
+    },
+    {
+      "board": "B.CCD.BEE.DFAA..DFG.HH..G........II.",
+      "par": 4
+    },
+    {
+      "board": "...BB..CCCDE..AADEFGHHI.FGJJIK....IK",
+      "par": 4
+    },
+    {
+      "board": "B.CCDDBEEFF..AA.GHIJJJGHI...KK.LLMM.",
+      "par": 4
+    },
+    {
+      "board": "BBBCDEFFGCDEAAG....HHH.I.JJKKI...LL.",
+      "par": 5
+    },
+    {
+      "board": "BC....BCDEF.AADEF.GGGHHHII.JJKLLMM.K",
+      "par": 4
+    },
+    {
+      "board": ".BBB...CCD.EAA.DFE.GGDF...HHHIJJ.KKI",
+      "par": 7
+    },
+    {
+      "board": "..........B.AA.CBD.E.C.DFE..GGFEHHII",
+      "par": 4
+    },
+    {
+      "board": "B.CC.DB..EEDF..AAGFHII.GJHKKLLJHMM..",
+      "par": 5
+    },
+    {
+      "board": "..BBCC.DEEF..DAAF..DGGHHII.JJ.KKK...",
+      "par": 4
+    },
+    {
+      "board": "BBCC.D...E.DAA.E....FGG...FHI.JJ.HI.",
+      "par": 4
+    },
+    {
+      "board": "....BBCC.D...AADEFGH..EFGH..I.....I.",
+      "par": 5
+    },
+    {
+      "board": "BBCCDDEEEFFGHAA..GHIJKKKHIJL..MM.LNN",
+      "par": 4
+    },
+    {
+      "board": ".BB...CCCD.EAAFDGE..F.G..H...I.H...I",
+      "par": 5
+    },
+    {
+      "board": ".BB.C.DEEEC.DAAFC.DGGFHH...II.......",
+      "par": 7
+    },
+    {
+      "board": "BCD.E.BCDFE.GAAFHIGJK.HILJKM.NL..M.N",
+      "par": 4
+    },
+    {
+      "board": "BC....BCDDEEAAF..G.HF..G.H..II...JJJ",
+      "par": 4
+    },
+    {
+      "board": "...BBB..CCDD.AAEFG.H.EFG.HI.F..HI...",
+      "par": 4
+    },
+    {
+      "board": "..BBCC..DDDEF.GAAEF.G..H.....HIII...",
+      "par": 4
+    },
+    {
+      "board": "..BB...CCDEE.AAD.FGHII.FGH.......JJ.",
+      "par": 4
+    },
+    {
+      "board": "..B.CCD.BE.FDAAEGFDH..G..H.I...H.IJJ",
+      "par": 4
+    },
+    {
+      "board": ".B.....B.CDEFAACDEF.....G...H.GII.H.",
+      "par": 4
+    },
+    {
+      "board": "BBCCDDEFFF.GEAA.HGE.I.H...I.H....JJ.",
+      "par": 4
+    },
+    {
+      "board": "BC..DDBC.EEEAAFG.HIIFGJH..KKJ...LL..",
+      "par": 5
+    },
+    {
+      "board": "BBBCCDEFFGHDEAAGHDII.JH.KLMJ..KLMNN.",
+      "par": 7
+    },
+    {
+      "board": "..B...C.BDEFCAADEF....GGH....IH....I",
+      "par": 4
+    },
+    {
+      "board": ".BB...CC.DDEFGAAHEFG.IHJKKKIHJLL.MM.",
+      "par": 4
+    },
+    {
+      "board": "B..CDDBEECF.AA..F.GG.HHH.IIJJJKKK.LL",
+      "par": 5
+    },
+    {
+      "board": "B...CCB...DDEFAA.GEFHH.GEFIJJKLLI..K",
+      "par": 4
+    },
+    {
+      "board": "..BCDDEEBC.FAA...F.G.HH.IG.JJKILL..K",
+      "par": 6
+    },
+    {
+      "board": "...BBBCD.EE.CDAAFGHII.FGH..JJG....KK",
+      "par": 5
+    },
+    {
+      "board": ".BBCC.D.E.FFD.EAAG.HIIIGJHKK.GJLLLMM",
+      "par": 5
+    },
+    {
+      "board": "B.....BCC..DAAE..DFFEGGG..HH.....II.",
+      "par": 4
+    },
+    {
+      "board": "BBCCC.DDEFFFAAEG..HIIGJJHKK.LMHNN.LM",
+      "par": 4
+    },
+    {
+      "board": ".B..CC.B...D.AAEFDGGGEFDH..I..H..I..",
+      "par": 4
+    },
+    {
+      "board": ".BBB.C.....C..AADE.FF.DEGHHIJJGKKILL",
+      "par": 7
+    },
+    {
+      "board": "..BB..CCDEFFAADE..GHHH..GII...GJJ...",
+      "par": 4
+    },
+    {
+      "board": "BBCCC...DDEFAA..EF....GG.H.....H.II.",
+      "par": 4
+    },
+    {
+      "board": "B.CCDDBEEFFGBHAA.GIH..JJIH.KKKLL.MM.",
+      "par": 4
+    },
+    {
+      "board": "BCDDEEBC.FFFB.GAAHI.GJJHI..KKLMMM..L",
+      "par": 6
+    },
+    {
+      "board": "BB.CDEFF.CDE.AAG.HIJJGKHILLLK.......",
+      "par": 5
+    },
+    {
+      "board": "..BBCD.EEECDF.AAC.F..G..HHIG..JJI.KK",
+      "par": 4
+    },
+    {
+      "board": "BCCDDDBEEFFFB.AA.GHHHIIG.JJJKK.LL.MM",
+      "par": 4
+    },
+    {
+      "board": "BC...DBC.EEDFGAAHIFGJ.HIKKJ.L..MM.L.",
+      "par": 4
+    },
+    {
+      "board": "....BB.CCDDE.AA.FEG.H.FIG.HJJI..H..I",
+      "par": 6
+    },
+    {
+      "board": "BCCD..B.ED..AAE...FFFGG..HH....IIJJJ",
+      "par": 5
+    },
+    {
+      "board": "BCCDDDB.EEFF..AA.G.HHI.GJJKI.LMMKNNL",
+      "par": 7
+    },
+    {
+      "board": "BCCDDDBEEFF..G.AAH.GI.JHKKI.JLMMNNNL",
+      "par": 5
+    },
+    {
+      "board": ".BB...CCD...AAD..E..FF.EG..H..G..HII",
+      "par": 4
+    },
+    {
+      "board": "...BCCD..BE.DAA.E...FFGH.II.GH.JJ.G.",
+      "par": 5
+    },
+    {
+      "board": "...BB..CC.D..AA.DEF.GGHEF...H.FII...",
+      "par": 4
+    },
+    {
+      "board": "..BBCC.DDDEFGAA.EFGHH.EFG.II..JJ.KK.",
+      "par": 4
+    },
+    {
+      "board": "..BB..CD..EECDAA.F.DGHHFIJGKKFIJGLLL",
+      "par": 5
+    },
+    {
+      "board": "BBB...CCDD.EF.AA.EFGG.HEIIJKH...JKLL",
+      "par": 4
+    },
+    {
+      "board": "..B.CCDDB.EFAA..EF.G.HHIJGKK.IJ.LLL.",
+      "par": 5
+    },
+    {
+      "board": "..BCCDEEB.FDG.AAF.G..HH...IIJK..LLJK",
+      "par": 7
+    },
+    {
+      "board": "..BCC.DDB.E.FGAAE.FGHIJJKGHI..K.....",
+      "par": 5
+    },
+    {
+      "board": "BCCDD.B.EEFF.AAG..HH.GII.J.KLL.J.KMM",
+      "par": 4
+    },
+    {
+      "board": "B..CC.BDD.EF..AAEF......G.HII.G.HJJ.",
+      "par": 4
+    },
+    {
+      "board": "....BB...CCD.AAEFD...EF.G.HII.G.H...",
+      "par": 6
+    },
+    {
+      "board": "BB..CCDDDEF.AA.EF....E.G.HHH.G..III.",
+      "par": 5
+    },
+    {
+      "board": "B.CC..B.DEFFAADE..GHHII.G.J.K.G.J.K.",
+      "par": 4
+    },
+    {
+      "board": ".BB.CCDD..E..FAAEG.FH..GIIHJJ.KKK...",
+      "par": 5
+    },
+    {
+      "board": "..B...CCBDE.AA.DEF.G...FHGIJ..H.IJKK",
+      "par": 4
+    },
+    {
+      "board": "BC..DDBC.EEEBAA.FGHHHIFG..JI.K..J..K",
+      "par": 5
+    },
+    {
+      "board": "BBCCDDEEEFFG...AAG.HHIII.JKKK..J.LL.",
+      "par": 4
+    },
+    {
+      "board": "..BBCCDDEEEFGH.AAFGH.III....JJKKLLL.",
+      "par": 4
+    },
+    {
+      "board": "..BB.C..D..CE.DAAFEGD..FHGIIJJH...KK",
+      "par": 5
+    },
+    {
+      "board": "B..CC.B.DD.EAA..FEGGHHF.....II......",
+      "par": 4
+    },
+    {
+      "board": "BB.CC.DDEEFF.AA.G.HIJJGKHILLLKHMM.NN",
+      "par": 5
+    },
+    {
+      "board": "BBB...CCC.D.AAEFD...EFG..HH.G...II..",
+      "par": 5
+    },
+    {
+      "board": "B...CCB...D.B.AADE..FFFEG.HHIIGJJ...",
+      "par": 4
+    },
+    {
+      "board": "....BBCCDDEF.AA.EF.GG.HH.II.JJ.KK.LL",
+      "par": 4
+    },
+    {
+      "board": "BB.CC.....DDAA..EF....EFGH.II.GH....",
+      "par": 4
+    },
+    {
+      "board": "BBCC..DD..EEAAF..G.HFI.GJH.IKLJMMIKL",
+      "par": 4
+    },
+    {
+      "board": "..BCC.DDBEFFAA.EGHIJJJGHI....K.....K",
+      "par": 7
+    },
+    {
+      "board": "BB....CDD.E.CAAFEG...FEG.HIF...HI.JJ",
+      "par": 7
+    },
+    {
+      "board": "B...CCBDD.EEB..AAF..GHHFIIGJJKLL.MMK",
+      "par": 4
+    },
+    {
+      "board": "B.....B..CD.AAECD...E.F.G.H.FIG.HJJI",
+      "par": 4
+    },
+    {
+      "board": ".BB......CDE.AACDEFFGG...H..II.HJJJ.",
+      "par": 4
+    },
+    {
+      "board": ".BB.CC.DDEEEFAA..GF.HHIGJKLLIMJK.NNM",
+      "par": 5
+    },
+    {
+      "board": "BBC.DE..CFDEGAAFDHGII..HJKLL.HJK....",
+      "par": 4
+    },
+    {
+      "board": "BB.CCCDE.FFFDE.AAGHIIJJGH.KKLL.MMM..",
+      "par": 4
+    },
+    {
+      "board": ".BB.CDEEF.CDAAF..GH..IIGHJJ.KKH.....",
+      "par": 5
+    },
+    {
+      "board": "BCC...B.DEFFAADE....GG..H.....H.IIJJ",
+      "par": 4
+    },
+    {
+      "board": "BB......CCD.AAE.D.F.EGG.FHI....HI...",
+      "par": 4
+    },
+    {
+      "board": "B.C.DDB.CEFFAA.E.GHIJKKGHIJ.LL.I.MMM",
+      "par": 4
+    },
+    {
+      "board": "..BBCCDD.EFFAA.EG.HIJJGKHILLLKHMMNNN",
+      "par": 7
+    },
+    {
+      "board": "B..CC.BDDEFF.AAE.G..H..G..HI.G..HI..",
+      "par": 4
+    },
+    {
+      "board": "BCCCDDBEFF.G.E.AAG.HIIJ..HKLJM..KLJM",
+      "par": 5
+    },
+    {
+      "board": ".B.....BC.DEAAC.DEFGGHHIF..J.IF..J.I",
+      "par": 4
+    },
+    {
+      "board": "BCD...BCD.EEFAA.GHFII.GHJ.KK.LJ.MM.L",
+      "par": 4
+    },
+    {
+      "board": "......BC..DDBCAAEFBGHIEFJGHIKLJ.MMKL",
+      "par": 4
+    },
+    {
+      "board": "B.CCDEBFF.DE.AAGH.IJJGHKI.LLHK...MMM",
+      "par": 5
+    },
+    {
+      "board": "....BC...DBC.AADE.FF..E....GHH...GII",
+      "par": 6
+    },
+    {
+      "board": "..BCC.DDBEFFGAAE.HG..IIHJ...K.JLL.K.",
+      "par": 4
+    },
+    {
+      "board": ".BBBCC.D.EEF.DAA.FGDH.IIGJH.KK.JLLMM",
+      "par": 4
+    },
+    {
+      "board": "BC...DBC...D.EAA.F.E...FG..HIIGJJH..",
+      "par": 6
+    },
+    {
+      "board": "B.CCCDBEEE.DFAA.GHF.IIGHJ.KKKHJ.....",
+      "par": 4
+    },
+    {
+      "board": "BC..DDBCEEE..AAFGH.IIFGH......JJ.KK.",
+      "par": 4
+    },
+    {
+      "board": ".BBBCCDDE.F.AAEGFHIIIG.H...JJ.....KK",
+      "par": 8
+    },
+    {
+      "board": ".BBCC..D...E.DFAAE.DF..E..GGHHIII...",
+      "par": 4
+    },
+    {
+      "board": ".BBCC...D..EAAD..E..FF..G.HI..G.HI..",
+      "par": 4
+    },
+    {
+      "board": ".BB....CC..DAAE..DFGE.HHFGII..FJJ...",
+      "par": 4
+    },
+    {
+      "board": ".B.CDD.B.C.EFAA..EF.GHH.I.G.JKI...JK",
+      "par": 5
+    },
+    {
+      "board": "BBB......CCDAAEF.DGGEF....EHH...II..",
+      "par": 6
+    },
+    {
+      "board": "..BBCCDD.EEFGH.AAFGH.IJJGKKILL.MMNN.",
+      "par": 4
+    },
+    {
+      "board": "BCDDEEBCFF..AA...GH..IIGHJJKKG.LLLMM",
+      "par": 4
+    },
+    {
+      "board": ".BCCC..BDDEEAAFG..HIFGJJHIKK..LLLMMM",
+      "par": 4
+    },
+    {
+      "board": "BB.CC...D...AAD.EF....EF...GGG.HHII.",
+      "par": 5
+    },
+    {
+      "board": "BB..C.....C.AAD..EFFDG.E.H.G.E.H.III",
+      "par": 4
+    },
+    {
+      "board": ".BBCC....DD..AAE...F.EGGHFIIJJHFKKK.",
+      "par": 4
+    },
+    {
+      "board": "..BBB..C.DDDECAAFGE.HHFGIJ..F.IJ..KK",
+      "par": 4
+    },
+    {
+      "board": ".BB...CC.DDEAAF..E.GF.HHIGJJJ.IGKK..",
+      "par": 4
+    },
+    {
+      "board": ".....BCDDDEBC.AAEF.G.HHF.G..II.JJ...",
+      "par": 4
+    },
+    {
+      "board": ".......BBC.D.AAC.DEE.CFF.GGG...HH.II",
+      "par": 4
+    },
+    {
+      "board": "..BBCC.DEFFGHDEAAGHIIJJJKKKL..MM.L..",
+      "par": 4
+    },
+    {
+      "board": "BB..C.D.EEC.D.AAC.FF.....GH....GH.II",
+      "par": 4
+    },
+    {
+      "board": "BCDEE.BCD.FFBAAGH..IIGH...JJJK..LL.K",
+      "par": 4
+    }
+  ],
+  "medium": [
+    {
+      "board": ".BBB.CDDEFGCAAEFG..HHH.I.JJKKI....LL",
+      "par": 9
+    },
+    {
+      "board": ".BBB.CDD.EFC.AAEF....EGG.HHH.IJJ.KKI",
+      "par": 9
+    },
+    {
+      "board": "..BBCC...DEFAAGDEF..GHII...H....JJ..",
+      "par": 9
+    },
+    {
+      "board": "BB.CD.EEECD..AA.D.FGGHH.F...IIF.....",
+      "par": 10
+    },
+    {
+      "board": ".B..CC.BDDDE.AAFGEHH.FG.I.J.KKI.JLL.",
+      "par": 9
+    },
+    {
+      "board": "BCCCDDB.EE.FAAGHIFJJGHIFKL.MI.KL.MNN",
+      "par": 11
+    },
+    {
+      "board": "BCDD..BCEEFF.AAGHI...GHIJJJ.HKLL.MMK",
+      "par": 9
+    },
+    {
+      "board": "BCC..DB..EED.FGAAH.FGIIH...JKK.LLJ..",
+      "par": 10
+    },
+    {
+      "board": "BBC.DDEEC..FGHAA.FGHIIIFJ..KK.JLLLMM",
+      "par": 14
+    },
+    {
+      "board": "B.CCCDB....DAA.EFGHH.EFG..IIJJ..KKLL",
+      "par": 9
+    },
+    {
+      "board": "...BCC.DDB.E.AAFGEHIIFGJHKKKLJ....L.",
+      "par": 9
+    },
+    {
+      "board": "B..CC.BDDDE..AA.EF..G.EF..GHII.JJHKK",
+      "par": 11
+    },
+    {
+      "board": "B..CCDBEEFFDAAG.HI..G.HI..GJJI......",
+      "par": 9
+    },
+    {
+      "board": "BBCCCDEE.FFD.AA..GHHI..GJ.IKLLJMMKNN",
+      "par": 14
+    },
+    {
+      "board": "BBCCCD.EEFFD.AA.G.HIJ.GKHIJLLK.MMNNN",
+      "par": 12
+    },
+    {
+      "board": "BBCCD.EEE.D.AA..DFG..HHFG..IIFG.JJKK",
+      "par": 9
+    },
+    {
+      "board": "BBB...CCDD..AA.EF.GHHEFIG.JKKI..JLLI",
+      "par": 9
+    },
+    {
+      "board": "BB..CD.EE.CD..AAF.GHH.FIG.JKKILLJ...",
+      "par": 9
+    },
+    {
+      "board": ".BCCDD.B..EEAAF.GH..F.GHIIJJ.....KKK",
+      "par": 10
+    },
+    {
+      "board": "B..CDEBFFCDEAAG.....GH...IJH...IJKK.",
+      "par": 9
+    },
+    {
+      "board": "BCDDEEBCFFGG.AAH.I..JHKI..JHKL..MM.L",
+      "par": 10
+    },
+    {
+      "board": "...BCCDDEBFFG.EAAHGIIIJH....JK.....K",
+      "par": 9
+    },
+    {
+      "board": "BCC...BDEEF..DAAFG...HFG..IH....IHJJ",
+      "par": 9
+    },
+    {
+      "board": "BB..CCDEEFFFDAA.GHIJKKGHIJLL.MNN...M",
+      "par": 9
+    },
+    {
+      "board": "B.CDEEB.CD.FGAA.HFG.IIHJ.KLLHJ.K...J",
+      "par": 10
+    },
+    {
+      "board": "..BCCDEEB.FDG.AAFHG.II.HG.JJKK......",
+      "par": 10
+    },
+    {
+      "board": "B..CDDBEEC..AAF....GFHHIJGKLLIJGKMMM",
+      "par": 9
+    },
+    {
+      "board": "BBB.CC...DEE.AADFGHHH.FG..IJJ...I.KK",
+      "par": 14
+    },
+    {
+      "board": ".BBCC...D..EAAD..E.F...E.FGGHH.F.III",
+      "par": 9
+    },
+    {
+      "board": "BCDDEEBCFFGGBAAH.I.JJH.I.KKLL.MM..NN",
+      "par": 11
+    },
+    {
+      "board": ".BBCCDEFF..DEAA..D.GHH..IGJJKKILLLMM",
+      "par": 9
+    },
+    {
+      "board": "...BBC....DC..AADC...EFF.GHE...GHIII",
+      "par": 9
+    },
+    {
+      "board": "...B.....BCC.AAB.DEEFF.D..GGG..HHII.",
+      "par": 12
+    },
+    {
+      "board": "...BB....CDD.AACEFGHIIEFGHJKKKG.JLL.",
+      "par": 9
+    },
+    {
+      "board": "........BCDDAABCE.FFFCEGHIII.GHJJ...",
+      "par": 10
+    },
+    {
+      "board": "B..C..BDECFFBDEAAGH.IIIGH...JK....JK",
+      "par": 9
+    },
+    {
+      "board": ".BCDDD.BCEE.AAC..FG...HFG.IIH...JJ..",
+      "par": 11
+    },
+    {
+      "board": "BBB.C.DEE.CFDAA.GFDHHHG....IJJKK.ILL",
+      "par": 9
+    },
+    {
+      "board": "BCCDDEB..FGEBAAFGHII..JHK.LLJ.K...MM",
+      "par": 9
+    },
+    {
+      "board": "BCD.EEBCD..FAAD.GFHIIJG.HK.JLLHK.MM.",
+      "par": 9
+    },
+    {
+      "board": "..BCDDEEBCFG.AA.FGHHHII..JJJKKLL..MM",
+      "par": 9
+    },
+    {
+      "board": ".B.....BCCDE.AAFDE..GF....GHHH..II..",
+      "par": 9
+    },
+    {
+      "board": "B...CCBDDEEFAAG..FHHGII..JKKKL.JMM.L",
+      "par": 10
+    },
+    {
+      "board": "BCDDEEBC.FGGBAAF..H..IIIH..JJKLLLMMK",
+      "par": 9
+    },
+    {
+      "board": ".BCDDDEBC.FGEHAAFG.H.IIIJHKK..J.....",
+      "par": 11
+    },
+    {
+      "board": "B..CCDB....D.EAAFGHEIIFGH..JKKHLLJ..",
+      "par": 9
+    },
+    {
+      "board": "BBC..DE.CFFDEAAGHI...GHIJJ..KILLMMK.",
+      "par": 10
+    },
+    {
+      "board": "..BCC.DDBEF.GAAEFHGIIJJHG...KL..MMKL",
+      "par": 9
+    },
+    {
+      "board": "BBCCCD..EEFDAAG.FDHIG...HIJ.....JKKK",
+      "par": 9
+    },
+    {
+      "board": "...BCC...B...AAB..DDEEF..G..FH.GII.H",
+      "par": 9
+    },
+    {
+      "board": "BBB.CCDD...EFAA.GEFH..G.FHIIJJKKLL..",
+      "par": 9
+    },
+    {
+      "board": "BCCDD.BEEEFFBAA.GHIIIJGH...J.K..LLLK",
+      "par": 9
+    },
+    {
+      "board": "BCCDDEB.FFGEHAAIGEH..IJJ.KK.L.MM..L.",
+      "par": 9
+    },
+    {
+      "board": ".BBBCCDEEFFFDAA..GHIJJJGHIKK.LMMNN.L",
+      "par": 10
+    },
+    {
+      "board": "B..CDDBEECFGHIAAFGHI..JGHIK.J.LLK.J.",
+      "par": 9
+    },
+    {
+      "board": ".BBBC.DDEECFAA..CF....GGHIIJJ.H..KK.",
+      "par": 9
+    },
+    {
+      "board": "B.CCDDBEEEFFGHAA.IGH...I...JKKLLLJ..",
+      "par": 10
+    },
+    {
+      "board": ".BBCDD...CEE..AAFG..HHFG....I.....I.",
+      "par": 9
+    },
+    {
+      "board": "BB...C....DC.AA.DE.FGG.E.F.HIIJJ.H..",
+      "par": 11
+    },
+    {
+      "board": "BCDDEEBC.F.GHAAFIGHJKKILMJN.ILM.N..L",
+      "par": 10
+    },
+    {
+      "board": ".BCDDD.BC..EAAC..EFGHH.IFGJJJI.GKK..",
+      "par": 13
+    },
+    {
+      "board": "...BCCDD.B.EAAFG.EHIFGJ.HIFGJKLLMM.K",
+      "par": 9
+    },
+    {
+      "board": ".BBCC.DDE.F.AAE.F.GHH.IIG..JJ.KKLL..",
+      "par": 9
+    },
+    {
+      "board": "BCC.DDBEEEFGHIAAFGHI.JJJKKKLL..MMMNN",
+      "par": 9
+    },
+    {
+      "board": "..BB......CDE.AACDE.FFC....GHH...GII",
+      "par": 9
+    },
+    {
+      "board": "B.....B..CDDBAAC...E.CFGHEIIFGHE.JJ.",
+      "par": 9
+    },
+    {
+      "board": "..BBCD.EE.CD.AAFGH.IIFGHJKKLG.JMMLNN",
+      "par": 9
+    },
+    {
+      "board": "BCD.EEBCD..FAAD..F.GG...HIJJKLHIMMKL",
+      "par": 9
+    },
+    {
+      "board": "..BCDD..BC.E.AAF.E..GFHHIIGF.JKK...J",
+      "par": 9
+    },
+    {
+      "board": "BBCDD.E.C.FGEAAHFG.IIHJJ.KLLMM.K.NN.",
+      "par": 12
+    },
+    {
+      "board": "B...CCBDD.EE.FAAG.HF..G.H.IJJJKKI...",
+      "par": 9
+    },
+    {
+      "board": "B..CDDBEECFGHIAAFGHIJJKKLL...M.NNN.M",
+      "par": 9
+    },
+    {
+      "board": ".BBBCC......AAD...EFDGGGEFHHHIEF...I",
+      "par": 9
+    },
+    {
+      "board": "BBCDD.E.CFG.EAAFGHEIIIGH..JJKK..LLMM",
+      "par": 9
+    },
+    {
+      "board": "BCDDEEBC.FFGAAHIJGK.HIJ.K....LMMM..L",
+      "par": 9
+    },
+    {
+      "board": "B...CCB.DDEEFAAG.HFI.G.H.I.GJKLLMMJK",
+      "par": 9
+    },
+    {
+      "board": ".BCDD..BC.E..AA.E..FFGGGHHH..IJJJKKI",
+      "par": 10
+    },
+    {
+      "board": "....BB..CDEEAACD.F.GGG.F.HIIJJ.HKKLL",
+      "par": 9
+    },
+    {
+      "board": ".BBCCD.EEFFDAAGHI.JJGHI.KLMN..KLMN..",
+      "par": 9
+    },
+    {
+      "board": "B.CCDDB.EEFFAAGHIJKLGHIJKLG..M.L...M",
+      "par": 9
+    },
+    {
+      "board": ".BBB.C.DD..CAAE...FFE.GGHIIJJJH.KKLL",
+      "par": 9
+    },
+    {
+      "board": "...BBB.CDDEE.CAA.F.C...FGGH..I..H..I",
+      "par": 9
+    },
+    {
+      "board": "B.CC.DB....D.E.AADFE.GHHF..GII...JJJ",
+      "par": 9
+    },
+    {
+      "board": "..BCDD..BCE..AACE...F.GGHHFII....JJ.",
+      "par": 9
+    },
+    {
+      "board": "BBBC.DE.FC.DEGFAAD.GHHII.JJKKK.LLLMM",
+      "par": 9
+    },
+    {
+      "board": "...BBBCDD.EFCGAAEFHGIIEFHJ..KK.JLLMM",
+      "par": 9
+    },
+    {
+      "board": "..BCC...B.DE..AADE.FF..E.GGGHHII....",
+      "par": 9
+    },
+    {
+      "board": ".BB.CDEFF.CDEGAAC..GHIIJKKHL.J.MMLNN",
+      "par": 10
+    },
+    {
+      "board": "BC..DDBCEEFFGAAH.IGJKHLIMJK.LNM.K..N",
+      "par": 9
+    },
+    {
+      "board": ".BBBCC....DDAAEFGH..EFGH..E..I.JJ..I",
+      "par": 9
+    },
+    {
+      "board": "BCCCDDBEFFGG.E.AAH.III.H..J..KLLJ..K",
+      "par": 9
+    },
+    {
+      "board": "..BBCCDDEFF.AAE.GHI...GHIJJKK...LL..",
+      "par": 9
+    },
+    {
+      "board": "BCDEFFBCDE.G.CAAHG..IIHG..JKL...JKL.",
+      "par": 11
+    },
+    {
+      "board": "..BCC.DDBEFFAABE..GH.IIJGH..KJLLL.K.",
+      "par": 9
+    },
+    {
+      "board": "..BCDDE.BCFFEGAAH..G..H.....I..JJJI.",
+      "par": 9
+    },
+    {
+      "board": "BCCD..BE.DFF.EAA.G..HH.GII..JK.LL.JK",
+      "par": 10
+    },
+    {
+      "board": "BCDDEEBCFFGHIAA.GHI..JJJ...KKL...MML",
+      "par": 9
+    },
+    {
+      "board": ".BC.DD.BCEEEAAC...F...GHFIIIGHFJJJ..",
+      "par": 12
+    },
+    {
+      "board": "B.CC..B..DE.AAFDEG.HF.IG.HJJI.KKLLI.",
+      "par": 12
+    },
+    {
+      "board": ".BCCDDEBFFGGE.AAHI.JJ.HIKKLLLM..NN.M",
+      "par": 10
+    },
+    {
+      "board": "BC.DDDBC.EEEBAA.FGHHI.FG..IJJ.KK....",
+      "par": 9
+    },
+    {
+      "board": "B.CC.DB...EDAAF.EG.HFIIG.HJJKK.LLL..",
+      "par": 10
+    },
+    {
+      "board": "..BB.CDD.EFC.AAEFCG..HF.G..HIIG..JJ.",
+      "par": 9
+    },
+    {
+      "board": "..BBC.DDEEC...AACFG..H.FG..HII.JJ.KK",
+      "par": 9
+    },
+    {
+      "board": "..BB.CDDEEFCGAAHF.GIIHF.JJK...LLKMM.",
+      "par": 10
+    },
+    {
+      "board": "BCDEEEBCDF..AADF...G..HH.GII.J.GKKKJ",
+      "par": 10
+    },
+    {
+      "board": "BBCC.D.EE..D.F.AADGFHH..GF.IJJ.KKI..",
+      "par": 12
+    },
+    {
+      "board": "BBBCC..DD.E..AAFEGHHIF.G..IJJG....KK",
+      "par": 9
+    },
+    {
+      "board": "BC.DDDBC.EF.GAAEF.GHIIJK.H..JKLL....",
+      "par": 9
+    },
+    {
+      "board": ".BBBCD.E..CD.EAACF.....F..GHII..GHJJ",
+      "par": 13
+    },
+    {
+      "board": "...BCC..DB..AADEF.GHHEFIGJ.KKI.J..LL",
+      "par": 10
+    },
+    {
+      "board": "...BBC.DDEECAA..FCGGHHF..IIIJJKK.LLL",
+      "par": 9
+    },
+    {
+      "board": ".BBCC..DDE..FAAEGHF.IIGHJ..KLLJ..K..",
+      "par": 9
+    },
+    {
+      "board": "...BBC...DDC.AAEFG.HHEFGI.JKKKI.JLL.",
+      "par": 9
+    },
+    {
+      "board": "B..CC.BDD.EEAA..FGHH..FGIIJJK.LLMMK.",
+      "par": 9
+    },
+    {
+      "board": ".BB.CC.DDEEFG..AAFG.HI.FJ.HIKKJ.LLMM",
+      "par": 9
+    },
+    {
+      "board": "BB..CCDDEEF.AAG.F...GHHI..JJJIKK.LLI",
+      "par": 10
+    },
+    {
+      "board": "BCCDDDB.E..FAAEG.F.HHGII.JKK...JLL..",
+      "par": 10
+    },
+    {
+      "board": "BCCDD.B.EEFFAAG.H...GIH....IJ....IJ.",
+      "par": 9
+    },
+    {
+      "board": "B.CDEEBFCDG.BFAAGH.FII.HJJ..KL....KL",
+      "par": 12
+    }
+  ],
+  "hard": [
+    {
+      "board": "BBC...D.CEEEDFAAGH.FIIGH...JKKLL.J..",
+      "par": 15
+    },
+    {
+      "board": "BBC.DDEEC..FGAA..FGHIIIFJH..KKJLLLMM",
+      "par": 15
+    },
+    {
+      "board": "BBCCCDEEFF.D...AAGHIIJ.GH.KJLLMMKNN.",
+      "par": 19
+    },
+    {
+      "board": "BBCCCDEEFF.D.GAAHIJGK.HIJ.K.LL.MMNNN",
+      "par": 15
+    },
+    {
+      "board": ".BBB.CDDEEFC.AAGFC..HGIIJ.HKK.J.LL..",
+      "par": 17
+    },
+    {
+      "board": "B.CC.DB.EFGDAAEFGHII..GHJK.LLHJK....",
+      "par": 16
+    },
+    {
+      "board": "BBBCC....DEE.AADFG.HHHFG..IJJ...I.KK",
+      "par": 15
+    },
+    {
+      "board": "BC.DD.BCEE..BAAFGHIIJFGH..JKKKLL....",
+      "par": 17
+    },
+    {
+      "board": "BBCCDE....DEAAFG..HHFGIIJKLLMMJK..NN",
+      "par": 16
+    },
+    {
+      "board": "BBCCDE..FGDEAAFGD.H.III.H.JJKKH.LLMM",
+      "par": 15
+    },
+    {
+      "board": "BB..CD..EECD.FAACG.FHIIGJ.HKLLJMMKNN",
+      "par": 16
+    },
+    {
+      "board": "BCC.DEB.FGDEAAFG.E.H.IJJ.HKIL..HK.L.",
+      "par": 15
+    },
+    {
+      "board": "..BB...CCDD.AAE..FGHEIIFGHEJK.LLLJK.",
+      "par": 16
+    },
+    {
+      "board": ".BCCD..BEFD.AAEFGH....GHIJJ.G.IKKLL.",
+      "par": 17
+    },
+    {
+      "board": ".BB.C.DDEECFGAA.CFG.HIJJKKHI...LL.MM",
+      "par": 15
+    },
+    {
+      "board": "BB..CC...DDE.FAA.EGFHH.EGF.IJJ.KKI..",
+      "par": 15
+    },
+    {
+      "board": "BBB.CD...ECDAA.EC...F..G.HFIIG.H.JJ.",
+      "par": 17
+    },
+    {
+      "board": "B.CC..B.DDE.AAF.EG..FHHGIIIJ.K.LLJ.K",
+      "par": 15
+    },
+    {
+      "board": "BCCDDDB.EF..AAEF...GHHII.GJJ.K.LL..K",
+      "par": 15
+    },
+    {
+      "board": ".B.CDDEB.CFGE.AAFGHIIJJKH.LMMK..LNNN",
+      "par": 15
+    },
+    {
+      "board": "BB.CC..DDD.E.AAFGEHHIFGJK.I.GJK.LLMM",
+      "par": 20
+    },
+    {
+      "board": "...BBCDDDEFCAAGEF.HHG.FIJKK..IJLL.MM",
+      "par": 19
+    },
+    {
+      "board": "..B.CC..BDE.AAFDEGH.FIIGHJJK.....K..",
+      "par": 15
+    },
+    {
+      "board": ".BCCD..BE.D.AAE..FGGH..FI.HJJ.I.KKK.",
+      "par": 15
+    },
+    {
+      "board": "BCCDEEBF.D.G.FAAHGIIJ.HG..JKKK..LLMM",
+      "par": 17
+    },
+    {
+      "board": "BBBCCCDDEEFGH.AAFGH.IIFGJ..KLLJMMKNN",
+      "par": 15
+    },
+    {
+      "board": "BCDDEEBCFFGGAAHIJ.K.HIJLK.HMML......",
+      "par": 15
+    },
+    {
+      "board": "B.C.DDB.CEFGAACEFGHIJJKKHILLLM..NN.M",
+      "par": 18
+    },
+    {
+      "board": "..B.CC..BDDEAAF..E..FGH.IJJGH.IKKGLL",
+      "par": 15
+    },
+    {
+      "board": "BBC.....CDDDEAA.FGEHIIFG.H.JKKLL.J..",
+      "par": 15
+    },
+    {
+      "board": "BCCDEEB..DFFAAGD.HIIGJJH...KKK..LLL.",
+      "par": 18
+    },
+    {
+      "board": ".BB.C..DE.CF.DEAAFGG.H.FI..HJJIKKKLL",
+      "par": 15
+    },
+    {
+      "board": "B.CCDEB..FDEAAGF.H.IGJJH.IKKLLMMNNOO",
+      "par": 17
+    },
+    {
+      "board": "BBCCCDE...FDE.AAFDG..HIIG..HJJGKKLLL",
+      "par": 15
+    },
+    {
+      "board": "..B.CCD.BEEFD.AA.FGGHH.F.IIJKK...JLL",
+      "par": 15
+    },
+    {
+      "board": ".BBCCCDDD..EAA.FGEHHHFGIJ.KKGIJLLMM.",
+      "par": 16
+    },
+    {
+      "board": "B...CCBDDD.EAA...E.FFGGEHIJJKKHILLMM",
+      "par": 15
+    },
+    {
+      "board": "....BCDDEEBCAAF..CGGFH..IJJHKKI...LL",
+      "par": 15
+    },
+    {
+      "board": "BB..CDEEEFCDAA.FGHIJJ.GHI.KLLHMMK.NN",
+      "par": 15
+    },
+    {
+      "board": ".BBB.C..DDECAAF.ECGHF.IIGHJJKKLL..MM",
+      "par": 15
+    },
+    {
+      "board": ".BCDEE.BCD....AAF.GGH.F...H.IJ.KKKIJ",
+      "par": 15
+    },
+    {
+      "board": "BCCD.EBFFD.EAAG..E.HG.II.HJJK...LLK.",
+      "par": 15
+    },
+    {
+      "board": "BCCCD.BEEEDF..AADFG.HIJJG.HIKK..LL..",
+      "par": 17
+    },
+    {
+      "board": "BBBCCD..EEFDG.AAF.GHHIF.JK.ILLJKMMNN",
+      "par": 15
+    },
+    {
+      "board": "BBC.DD..CEE.AA..F..GHHF..G.IJJKK.I..",
+      "par": 15
+    },
+    {
+      "board": ".BBC...D.CEE.DAAF.GG..FH..I.JHKKI.J.",
+      "par": 15
+    },
+    {
+      "board": "BCDD.EBC...EBAAFG.HHIFG...IJJJ..KKK.",
+      "par": 15
+    },
+    {
+      "board": "B.CDD.B.CEEFGAAH.FGI.HJJGIKKL.MMM.L.",
+      "par": 15
+    },
+    {
+      "board": "BBCCD..EEEDFAAGHDFIJGHKKIJ......LLMM",
+      "par": 16
+    },
+    {
+      "board": "BCCD.EB.FD.EAAF.GHIII.GH.J.KKK.J....",
+      "par": 15
+    },
+    {
+      "board": ".BBC...D.CEEFDAAG.FHH.G...IJKKLLIJ..",
+      "par": 16
+    },
+    {
+      "board": "BB.CCCD.EEFGDAAHFG.IIH....JKKLMMJNNL",
+      "par": 15
+    },
+    {
+      "board": ".BBCCD.EEF.DAA.FG..HIIG..HJKKKLLJMMM",
+      "par": 15
+    },
+    {
+      "board": "..BCCDEEB.FDG.AAFDG..HHHGIJJKK.ILLMM",
+      "par": 15
+    },
+    {
+      "board": "BBBCDDEFFCGHEAACGHIIJKK...JLLM...NNM",
+      "par": 20
+    },
+    {
+      "board": "BCCDDEBFFF.EAA.GH.II.GH..JKKLL.J..MM",
+      "par": 15
+    },
+    {
+      "board": "..B.....BCCDEAAFGDE.HFGIEJHKKI.JLLLI",
+      "par": 15
+    },
+    {
+      "board": "BCCD..BEED.FAAGH.F.IGH...IJKK...J.LL",
+      "par": 16
+    },
+    {
+      "board": ".B..CC.BDDEEAAF...GGFHHIJKKL.IJ..L..",
+      "par": 15
+    },
+    {
+      "board": "B.CDDEBFC.GEHFAAGEHIJJG..I.KLL.MMK..",
+      "par": 16
+    },
+    {
+      "board": ".BBCC..DD.E..AA.EFGGHHEFIIJKKLMMJNNL",
+      "par": 15
+    },
+    {
+      "board": "B..CCDBEE..D.FAAGDHF..G.HFIJKKLLIJMM",
+      "par": 15
+    },
+    {
+      "board": ".BCCDD.BEFFFAAE..GH..IIGHJJ.KL.MM.KL",
+      "par": 15
+    },
+    {
+      "board": "BCCCDDBEEFF..GAA.H.GIIJH.GKLJH..KLMM",
+      "par": 17
+    },
+    {
+      "board": "BCCDD.B.E.FFAAE.GHIJKKGHIJLLLH...MM.",
+      "par": 18
+    },
+    {
+      "board": "BCCDEFB.GDEFAAG..H..I..H.JI.KK.JLLMM",
+      "par": 15
+    },
+    {
+      "board": "B.CC..BDD.EFAAGHEF.IGH...IJ.KK..J...",
+      "par": 15
+    },
+    {
+      "board": "BB..CC..DEFFAADE..GHD.IIGHJJKLMM..KL",
+      "par": 16
+    },
+    {
+      "board": ".BCCDDEBFFGHEAAIGHJJKI.L..KMMLNNKOOL",
+      "par": 15
+    },
+    {
+      "board": "BCCD.EBFFD.EAAG..E.HGII..HJ.KK..JLLL",
+      "par": 17
+    },
+    {
+      "board": "..BCCDE.BF.DEAAFGHIIJKGH..JKGHLLMM..",
+      "par": 17
+    },
+    {
+      "board": "BCCDDDBEEFFGHIAA.GHIJJJG.IKLLLMMK.NN",
+      "par": 18
+    },
+    {
+      "board": ".BC.DE.BCFDEAAGF.EH.G.I.HJJKI..LLK..",
+      "par": 15
+    },
+    {
+      "board": "B..CDDBEEC.F.GHAAF.GHII..GJJKLMMM.KL",
+      "par": 15
+    },
+    {
+      "board": "BBCCC.DDD.....AAEFGGHHEFI.JKLLI.JKMM",
+      "par": 19
+    },
+    {
+      "board": ".BBCC...DE..AADE.FGGHHHFIJJKKKI.LLMM",
+      "par": 15
+    },
+    {
+      "board": "...BCC..DB.EAADB.EF.GGHHF.IIJ.KKLLJ.",
+      "par": 16
+    },
+    {
+      "board": ".BCCDD.BEFF.AAE.GHI...GHIJJK.HI..KLL",
+      "par": 17
+    },
+    {
+      "board": "..BCC.D.BEE.DAAF.GHHHFIGJKLLIMJK.NNM",
+      "par": 16
+    },
+    {
+      "board": "..BB..CC..DEAA..DEFFFGGEHIIJJJH.KKLL",
+      "par": 15
+    },
+    {
+      "board": "BCC...B.DEEEAADFGH.IIFGHJJKK.L..MMML",
+      "par": 15
+    },
+    {
+      "board": "..BCDDEEBC..F.AA.GFHHHIGJJKKIL.MM.IL",
+      "par": 17
+    },
+    {
+      "board": "BB.CCDEFFG.DEAAG....HGII..HJJKLL.MMK",
+      "par": 15
+    },
+    {
+      "board": "...BC.D..BC.DAAEC.FGGEHHFIJKK..IJ...",
+      "par": 16
+    },
+    {
+      "board": ".BCC...BDDE.AAF.EGHHF..GIJJKKKILLMM.",
+      "par": 16
+    },
+    {
+      "board": "B..C..BDDCEFGAAHEFG.IHEFG.IJJ...KKLL",
+      "par": 20
+    },
+    {
+      "board": "BBC..D.ECFFDGEAAHDGIIJH....JKK...LLL",
+      "par": 19
+    },
+    {
+      "board": "..BCCC..BDDE.AAFGEHH.FGIJJKKKILLLMMM",
+      "par": 15
+    },
+    {
+      "board": "BCDDE.BCFFE.AAGHI...GHI....J.K...J.K",
+      "par": 15
+    },
+    {
+      "board": "BBBCDD...CEEAA.C..FG.HH.FGII.JKKLL.J",
+      "par": 17
+    },
+    {
+      "board": "BB.....CDD.E.C.AAEFGGHHEF.IJKKLLIJ..",
+      "par": 15
+    },
+    {
+      "board": "B.CC.DB.E.FDAAE.FGHHHI.G.JKILL.JK.MM",
+      "par": 15
+    },
+    {
+      "board": "BC...DBCEEFDAA.GFHIJJGFHI.KLLL..KMMM",
+      "par": 15
+    },
+    {
+      "board": "BBBCCDEEFFGD..AAGD...HIIJKKHLLJMMNN.",
+      "par": 15
+    },
+    {
+      "board": "BCC.DDB..EE.AAF..GHIFJJGHIKKLM.NNNLM",
+      "par": 17
+    },
+    {
+      "board": ".BCCCD.BE.FDAAE.FG..HHIGJKKLIGJMMLI.",
+      "par": 16
+    },
+    {
+      "board": "..BBBC..DEECAAD.FGHIJJFGHI.KL..MMKL.",
+      "par": 17
+    },
+    {
+      "board": "B.CC.DBEEE.DAAFG.HIIFG.H..JKK.LLJ.MM",
+      "par": 15
+    },
+    {
+      "board": ".BCC..DBEE.FD.AAGFHHIJGFK.IJLLKMMMNN",
+      "par": 15
+    },
+    {
+      "board": "..BCCD..B.ED.FAAEGHF.IJGHKKIJ.H.....",
+      "par": 18
+    },
+    {
+      "board": "BCDD.EBCFGHEAAFGHIJJ.K.I...K........",
+      "par": 16
+    },
+    {
+      "board": "B.CDDDB.CEFFAA.E.GHIJJKGHILLKM.....M",
+      "par": 15
+    },
+    {
+      "board": ".B.CC..B.DEEFAAD..FGHDIIJGHKKLJ.HMML",
+      "par": 16
+    },
+    {
+      "board": "BBCCD.EE..D.FAA.D.FG.HHH.G.IJJ.KKI..",
+      "par": 15
+    },
+    {
+      "board": "BCCCDDB.EEFFAAGH..IIGHJJKKLLLMNNOOOM",
+      "par": 15
+    },
+    {
+      "board": "..BCDDEEBC..AAB.FGHHIIFGJJKKKL.MMNNL",
+      "par": 17
+    },
+    {
+      "board": "BBC...DEC..FDEGAAFHIGJJFHIGKLLH..K..",
+      "par": 15
+    },
+    {
+      "board": "BCCDDDB...EEAAF..G.HF.IG.HJJIK..LLIK",
+      "par": 17
+    },
+    {
+      "board": "BBC..DE.CFFDE.AAG.HH.IGJKK.ILJMMNNLJ",
+      "par": 17
+    },
+    {
+      "board": "BCDDEEBCFFF..AAGH..IJGHKLIJMMKLNNOO.",
+      "par": 15
+    },
+    {
+      "board": "BCCD..BEEDFGAAH.FGIIH.FJ.KLL.J.K.MM.",
+      "par": 15
+    },
+    {
+      "board": ".B..C..BDECFAADEGFHHHIG.J..IGKJLLMMK",
+      "par": 15
+    },
+    {
+      "board": "BB.CDD...CEE.AA.FG.HIIFG.HJ.FKLLJ..K",
+      "par": 15
+    },
+    {
+      "board": ".BB.CC.DDEEFAA..GFHHIIGFJKKLLLJMMMNN",
+      "par": 15
+    },
+    {
+      "board": "BBCC.DEEFFFDGHAAIDGHJJI.K.LLMMKNNNOO",
+      "par": 16
+    },
+    {
+      "board": ".BCCDD.BE...AAE..FG..HIFGJJHIF....KK",
+      "par": 15
+    },
+    {
+      "board": "..BBB..CCDEFAAGDEFHHG...IJJKLMINNKLM",
+      "par": 20
+    },
+    {
+      "board": "BB.C..DE.CFFDEAAGHIIJ.GH..JKKKLLMM..",
+      "par": 18
+    },
+    {
+      "board": "BCC.DDB.EFF.AAEG..H..GIJHKKGIJH.LL..",
+      "par": 16
+    },
+    {
+      "board": "BB.CDD.EEC..AA..FG.HI.FG.HIJJG..I.KK",
+      "par": 17
+    }
+  ]
+}
