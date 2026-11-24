@@ -6,6 +6,9 @@ import QRCode from 'qrcode';
 import * as esbuild from 'esbuild';
 import * as acorn from 'acorn';
 import { LINKEDIN_URL } from '../src/config.js';
+import { encodePNG } from './png.js';
+import { drawVehicle } from '../src/ui/sprites.js';
+import { PALETTE } from '../src/ui/palette.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const p = (...parts) => join(root, ...parts);
@@ -42,16 +45,63 @@ async function bundle() {
   return code;
 }
 
+// A canvas-like context that paints solid fillRects into an RGBA buffer, so
+// the icon is drawn with the same sprite code the game uses.
+function pixelContext(width, height) {
+  const rgba = new Uint8Array(width * height * 4);
+  let color = [0, 0, 0];
+  return {
+    rgba,
+    set fillStyle(hex) {
+      color = [1, 3, 5].map((k) => parseInt(hex.slice(k, k + 2), 16));
+    },
+    fillRect(x, y, w, h) {
+      for (let py = Math.max(0, y); py < Math.min(height, y + h); py++) {
+        for (let px = Math.max(0, x); px < Math.min(width, x + w); px++) {
+          const k = (py * width + px) * 4;
+          rgba[k] = color[0];
+          rgba[k + 1] = color[1];
+          rgba[k + 2] = color[2];
+          rgba[k + 3] = 255;
+        }
+      }
+    },
+  };
+}
+
+function drawIcon() {
+  const size = 180;
+  const ctx = pixelContext(size, size);
+  ctx.fillStyle = PALETTE.road;
+  ctx.fillRect(0, 0, size, size);
+  ctx.fillStyle = PALETTE.roadLine;
+  for (let x = 6; x < size; x += 30) {
+    ctx.fillRect(x, 40, 15, 5);
+    ctx.fillRect(x, 135, 15, 5);
+  }
+  drawVehicle(ctx, { len: 2, horiz: true }, 20, 60, 60, PALETTE.red);
+  ctx.fillStyle = PALETTE.exit;
+  for (let n = 0; n < 3; n++) {
+    for (let row = 0; row < 9; row++) {
+      const half = 4 - Math.abs(row - 4);
+      ctx.fillRect(150 + n * 9, 81 + row * 2, half * 2 + 2, 2);
+    }
+  }
+  return encodePNG(size, size, ctx.rgba);
+}
+
 async function main() {
   writeQR();
   const code = (await bundle()).replace(/<\/script/gi, '<\\/script');
   const template = readFileSync(p('web/index.template.html'), 'utf8');
   const html = template.replace('<!--BUNDLE-->', () => code);
-  const version = createHash('sha256').update(html).digest('hex').slice(0, 10);
+  const icon = drawIcon();
+  const version = createHash('sha256').update(html).update(icon).digest('hex').slice(0, 10);
   mkdirSync(p('dist'), { recursive: true });
   writeFileSync(p('dist/index.html'), html);
   const sw = readFileSync(p('web/sw.js'), 'utf8').replace(/__CACHE_VERSION__/g, version);
   writeFileSync(p('dist/sw.js'), sw);
+  writeFileSync(p('dist/apple-touch-icon.png'), icon);
   console.log(`built dist/index.html (${(html.length / 1024).toFixed(1)} KB), cache ${version}`);
 }
 

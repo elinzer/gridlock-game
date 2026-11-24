@@ -1,5 +1,5 @@
 var CACHE = 'lower-wacker-__CACHE_VERSION__';
-var PRECACHE = ['./', './index.html'];
+var PRECACHE = ['./', './index.html', './apple-touch-icon.png'];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
