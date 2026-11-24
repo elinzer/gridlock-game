@@ -1,0 +1,15 @@
+{
+  "name": "gridlock-game",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "build": "node tools/build.js",
+    "gen": "node tools/generate-puzzles.js"
+  },
+  "devDependencies": {
+    "acorn": "8.19.0",
+    "esbuild": "0.28.2",
+    "qrcode": "1.5.4"
+  }
+}

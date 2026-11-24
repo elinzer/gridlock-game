@@ -2,3 +2,5 @@ node_modules/
 .DS_Store
 .superpowers/
 .env*
+dist/
+src/generated/
