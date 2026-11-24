@@ -1,5 +1,4 @@
-// TODO(driver): set your LinkedIn URL
-export const LINKEDIN_URL = 'https://www.linkedin.com/';
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/elinzer';
 
 export const DIFFICULTIES = {
   easy:   { label: 'EASY',   limitMs: 120000, parMin: 4,  parMax: 8 },
