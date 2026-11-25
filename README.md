@@ -26,7 +26,7 @@ npm run gen       # regenerates src/puzzle/puzzles.json (deterministic, takes ab
 
 To try it on desktop, serve `dist/` (`python3 -m http.server -d dist 8080`) and open it at 1024×768. The mouse works the same as touch.
 
-Pushing to `main` runs the tests, builds, and deploys to GitHub Pages (`.github/workflows/pages.yml`).
+Pushing to `main` runs the tests, builds, and deploys to GitHub Pages (`.github/workflows/pages.yml`). Build and deploy are separate jobs, and the deploy retries once on its own. If it still fails (GitHub's Pages service is occasionally flaky), use **Re-run failed jobs**, which redeploys the same build.
 
 ## Setting the QR code
 
@@ -40,4 +40,4 @@ The QR code in the sidebar points to `LINKEDIN_URL` in [`src/config.js`](src/con
 4. Lock rotation in landscape.
 5. **Settings → Accessibility → Guided Access → On.** Open the game, then triple-click the Home button to start Guided Access.
 
-Updates install the next time the game is opened while the iPad is on Wi-Fi. If launching offline from the home screen ever fails, a fallback is to keep the game open in a Safari tab under Guided Access.
+While on Wi-Fi, the game checks for a new version every 10 minutes and reloads onto it when it's sitting untouched on the title screen, so it never interrupts a game. If launching offline from the home screen ever fails, a fallback is to keep the game open in a Safari tab under Guided Access.
