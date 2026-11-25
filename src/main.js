@@ -2,7 +2,7 @@ import puzzles from './puzzle/puzzles.json';
 import { createStorage } from './game/storage.js';
 import { createLeaderboard } from './game/leaderboard.js';
 import { createPicker } from './game/picker.js';
-import { initialState, reduce, warningVisible, canReloadForUpdate } from './game/app.js';
+import { initialState, reduce, warningVisible, canReloadForUpdate, touchRefreshDue } from './game/app.js';
 import { W, H, hitTest, toInternal } from './ui/layout.js';
 import { beginDrag, dragOffsetPx, endDrag, cancelDrag } from './ui/drag.js';
 import { render, isAnimating, SOLVE_ANIM_MS, TITLE_BOARD } from './ui/render.js';
@@ -124,6 +124,8 @@ function startGesture(id, clientX, clientY) {
 
 function moveGesture(id, clientX, clientY) {
   if (!gesture || gesture.id !== id || !view.drag) return;
+  const now = performance.now();
+  if (touchRefreshDue(state, now)) dispatch({ type: 'touch', now });
   const p = pointFrom(clientX, clientY);
   view.dragOffset = dragOffsetPx(view.drag, p.x, p.y);
 }
