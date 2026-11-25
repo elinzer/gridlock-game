@@ -30,6 +30,12 @@ export function canReloadForUpdate(state, now) {
   return state.screen === 'title' && now - state.lastTouchAt >= RELOAD_QUIET_MS;
 }
 
+export const DRAG_TOUCH_REFRESH_MS = 1000;
+
+export function touchRefreshDue(state, now) {
+  return now - state.lastTouchAt >= DRAG_TOUCH_REFRESH_MS;
+}
+
 const set = (state, changes) => Object.assign({}, state, changes);
 
 function goTitle(state) {

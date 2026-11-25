@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { idleStatus } from '../src/game/idle.js';
-import { initialState, reduce, warningVisible, canReloadForUpdate } from '../src/game/app.js';
+import { initialState, reduce, warningVisible, canReloadForUpdate, touchRefreshDue } from '../src/game/app.js';
 import { createStorage } from '../src/game/storage.js';
 import { createLeaderboard } from '../src/game/leaderboard.js';
 
@@ -221,4 +221,16 @@ test('updates only reload on an untouched title screen', () => {
   assert.equal(canReloadForUpdate(title, 5000), true);
   const menu = reduce(title, tap('title:play', 0), deps);
   assert.equal(canReloadForUpdate(menu, 999999), false);
+});
+
+test('a long drag keeps the round awake', () => {
+  const { deps } = setup();
+  let s = run(initialState(0), [tap('title:play', 0), tap('diff:easy', 0)], deps);
+  for (let now = 0; now <= 75000; now += 16) {
+    if (touchRefreshDue(s, now)) s = reduce(s, { type: 'touch', now }, deps);
+    s = reduce(s, { type: 'tick', now }, deps);
+  }
+  assert.equal(s.screen, 'play');
+  assert.equal(warningVisible(s, 75000), false);
+  assert.equal(touchRefreshDue(s, s.lastTouchAt + 999), false);
 });
